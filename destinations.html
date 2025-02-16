@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character encoding for the page, ensuring proper rendering of characters -->
     <meta charset="UTF-8" />
+    <!-- Viewport settings for responsive design, adapts layout to screen size -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title displayed on the browser tab -->
     <title>Destinations</title>
+
+    <!-- Link to the Bootstrap CSS for styling -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
 
+    <!-- Link to custom CSS file for additional styling -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!--THIS IS THE NAVBAR-->
+    <!-- THIS IS THE NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
+        <!-- Navbar brand, links to the homepage -->
         <a class="navbar-brand" href="index.html">Oceana</a>
 
+        <!-- Button to toggle the navbar in mobile view -->
         <button
           class="navbar-toggler"
           type="button"
@@ -26,23 +34,45 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+          <!-- Icon for the toggler button -->
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Navbar links and search bar, collapses in smaller screens -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar items -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Active Home link -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+            <!-- Link to the destinations page -->
             <li class="nav-item">
               <a class="nav-link" href="destinations.html">Link</a>
             </li>
           </ul>
+
+          <!-- Search form -->
+          <form class="d-flex" role="search">
+            <!-- Search input field -->
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <!-- Search button -->
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </nav>
-    <!--TABLE-->
+
+    <!-- THIS IS THE TABLE OF DESTINATIONS -->
     <table class="table">
+      <!-- Table headers -->
       <thead>
         <tr>
           <th scope="Hotel Name">#</th>
@@ -51,30 +81,37 @@
         </tr>
       </thead>
 
+      <!-- Table body with hotel data -->
       <tbody>
+        <!-- Row for Oceana Boca Resort and Spa -->
         <tr>
           <td>Oceana Boca Resort and Spa</td>
           <td>Boca Raton, FL</td>
           <td>+1(981)508-7811</td>
         </tr>
+
+        <!-- Row for Oceana Miami Resort and Spa -->
         <tr>
           <td>Oceana Miami Resort and Spa</td>
           <td>Miami, FL</td>
           <td>+1(981)508-7811</td>
         </tr>
 
+        <!-- Row for Oceana LA Resort and Spa -->
         <tr>
           <td>Oceana LA Resort and Spa</td>
           <td>Los Angeles, California</td>
           <td>+1(981)508-7811</td>
         </tr>
 
+        <!-- Row for Oceana Cape Cod Resort and Spa -->
         <tr>
           <td>Oceana Cape Cod Resort and Spa</td>
           <td>Cape Cod, MA</td>
           <td>+1(981)508-7811</td>
         </tr>
 
+        <!-- Row for Oceana Santorini Resort and Spa -->
         <tr>
           <td>Oceana Santorini Resort and Spa</td>
           <td>Santorini, Greece</td>
@@ -83,6 +120,7 @@
       </tbody>
     </table>
 
+    <!-- Bootstrap JavaScript bundle for interactive elements like the navbar -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
